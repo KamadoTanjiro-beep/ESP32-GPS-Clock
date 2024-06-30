@@ -5,7 +5,7 @@
 3. AHT25 (Temperature and Humidity)
 4. GPS Neo 6m 
 5. ST7920 128X64 LCD Display
-6. Buzzer
+6. Buzzer <br/>
 Optional
 7. LiFePO4 AAA 80mAh battery (for GPS memory)
 8. TP5000 Charging circuit
