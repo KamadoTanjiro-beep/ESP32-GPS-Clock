@@ -2,3 +2,6 @@
 global.h
 global.cpp
 global.exe
+*.bin
+*.elf
+*.map

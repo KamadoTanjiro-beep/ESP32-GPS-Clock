@@ -9,11 +9,11 @@
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <AsyncElegantOTA.h>
+#include <ElegantOTA.h>
 #include <esp_wifi.h>
 #include "driver/adc.h"
 
-#include "global.h" //remove this
+#include "global.h" //remove this (for other users)
 
 #ifndef STASSID
 #define STASSID "YOUR_SSID"    // WIFI NAME/SSID
@@ -147,9 +147,9 @@ void setup()
     Serial.println(WiFi.localIP());
 
     server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
-              { request->send(200, "text/plain", "Hi! I am ESP32, the Nini GPS Clock."); });
+              { request->send(200, "text/html", "<h1>Hi! I am ESP32, the Nini GPS Clock. Add /update for uploading code.</h1>"); });
 
-    AsyncElegantOTA.begin(&server); // Start ElegantOTA
+    ElegantOTA.begin(&server); // Start ElegantOTA
     server.begin();
     Serial.println("HTTP server started");
   }
@@ -157,7 +157,6 @@ void setup()
 
 void loop()
 {
-
   while (!gps.hdop.isValid())
   {
     u8g2.clearBuffer();
@@ -279,7 +278,7 @@ void loop()
   else if (pulse == 0)
     pulse = 1;
 
-  smartDelay(900);
+  smartDelay(800);
   if ((millis() - lastTime) > timerDelay)
   {
     aht.getEvent(&humidity, &temp);
