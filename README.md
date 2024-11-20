@@ -13,8 +13,8 @@
 10. Wires and other stuff (like Prototyping board, connectors, switch etc.. as needed)
 
 ## Upcoming changes
-Check [issues](https://github.com/KamadoTanjiro-beep/gpsClock/issues)
+Check [issues](https://github.com/KamadoTanjiro-beep/ESP32-GPS-CLOCK-V1/issues)
 
 ## Schematics
-<img src="https://github.com/KamadoTanjiro-beep/gpsClock/blob/main/Schematic/Schematic_GPS%20Clock.png" alt="schematics_gps_clock_chikne97" width="800" height="600"> <br/>
+<img src="https://github.com/KamadoTanjiro-beep/ESP32-GPS-CLOCK-V1/blob/main/Schematic/Schematic_GPS%20Clock-V1.png" alt="schematics_gps_clock_chikne97" width="800" height="600"> <br/>
 GPS Clock ESP32 <br/><br/>
