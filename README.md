@@ -1,8 +1,9 @@
 # ESP32 based GPS Clock cum Weather Station in Arduino
 ## Hardware
-1. ESP32
+1. DOIT ESP32 devkit v1
 2. BH1750 (Light Sensor)
-3. AHT25 (Temperature and Humidity)
+3. ~AHT25 (Temperature and Humidity)~ _DO NOT USE THIS SENSOR, I AM GOING TO CHANGE IT TO BME 280 or BMP 280 or TMP117
+   _HUGE ACCURACY ISSUE, MAYBE DUE TO LIBRARY OR HARDWARE, CAN'T BE SURE_
 4. GPS Neo 6m 
 5. ST7920 128X64 LCD Display
 6. Buzzer 
